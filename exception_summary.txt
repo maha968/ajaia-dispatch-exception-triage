@@ -1,0 +1,15 @@
+Records processed: 5
+Exception counts by event type:
+  carrier_substitution: 1
+  doc_mismatch: 2
+  missed_pickup: 2
+
+Data-quality notes:
+  - CPX-88213: timestamp has no timezone; preserved without assuming UTC
+  - CPX-88214: timestamp has no timezone; preserved without assuming UTC
+  - CPX-88216: carrier_code missing; cannot infer carrier
+  - CPX-88216: timestamp has no timezone; preserved without assuming UTC
+  - CPX-88217: timestamp has no timezone; preserved without assuming UTC
+
+No timezone conversion was performed: Z means UTC; timestamps without Z remain timezone-unspecified.
+Normalization does not establish the FreightWorks EDI mapping or resolve DET-121.
